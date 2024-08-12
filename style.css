@@ -145,3 +145,8 @@ input {
     margin-left: 2%;
   }
 }
+
+a {
+  text-decoration: none;
+  color: rgb(78, 130, 226);
+}
