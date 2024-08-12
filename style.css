@@ -78,6 +78,7 @@ input {
   .container {
     width: 30%; /* More compact on larger screens */
     margin-top: 1%;
+    background: transparent;
   }
 
   input {
@@ -106,6 +107,7 @@ input {
   .container {
     width: 50%; /* Adjust the width for tablet view */
     margin-top: 3%;
+    background: transparent;
   }
 
   input, .btn-1, .dotted, .btn-2, .forgot, .btn-3 {
