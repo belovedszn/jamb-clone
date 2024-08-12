@@ -7,10 +7,7 @@
 .nowrap {
   white-space: nowrap;
 }
-a {
-  text-decoration: none;
-  color: rgb(78, 130, 226);
-}
+
 body {
   background-size: cover;
   background-attachment: fixed;
@@ -128,4 +125,9 @@ input {
   input, .btn-1, .dotted, .btn-2, .forgot, .btn-3 {
     margin-left: 4%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(78, 130, 226);
 }
