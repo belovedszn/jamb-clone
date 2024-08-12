@@ -1,4 +1,4 @@
-/* Base Styles (applied to all devices) */
+/* Base Styles */
 .center {
   display: grid;
   place-items: center;
@@ -12,13 +12,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: Helvetica;
-  transition: background-image 1s ease-in-out;
 }
 
 .container {
   width: 90%; /* Default to a mobile-friendly width */
   height: auto;
-  background: transparent;
+  background-color: transparent;
   box-shadow: 0 0 10px rgb(88, 85, 85);
   margin-top: 5%;
 }
@@ -59,7 +58,11 @@ input {
   margin-top: 1%;
   font-family: Helvetica;
   margin-left: 4%;
-  font-family: Helvetica;
+}
+
+.btn-2 button {
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .forgot {
@@ -78,7 +81,6 @@ input {
   .container {
     width: 30%; /* More compact on larger screens */
     margin-top: 1%;
-    background: transparent;
   }
 
   input {
@@ -107,7 +109,6 @@ input {
   .container {
     width: 50%; /* Adjust the width for tablet view */
     margin-top: 3%;
-    background: transparent;
   }
 
   input, .btn-1, .dotted, .btn-2, .forgot, .btn-3 {
@@ -127,13 +128,20 @@ input {
   }
 }
 
-@media (max-width: 400px) {
-    .btn-2 button {
-  width: 100px;
-}
-}
+/* Extra Small Mobile View (up to 400px) */
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 100%; /* Full width for very small screens */
+    margin-top: 5%;
+  }
 
-a {
-  text-decoration: none;
-  color: rgb(78, 130, 226);
+  .btn-2 button {
+    width: 100%; /* Ensure button remains within container */
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  input, .btn-1, .dotted, .btn-2, .forgot, .btn-3 {
+    margin-left: 2%;
+  }
 }
