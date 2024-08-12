@@ -1,71 +1,73 @@
 .center {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 body {
-    background-image: url(img/bkg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Helvetica;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Helvetica;
+  transition: background-image 1s ease-in-out;
 }
 
 .container {
-    width: 30%;
-    height: auto;
-    background-color: transparent;
-    box-shadow: 0 0 10px rgb(88, 85, 85);
-    margin-top: 1%;
+  width: 30%;
+  height: auto;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgb(88, 85, 85);
+  margin-top: 1%;
 }
 
 h2 {
-    margin-left: 10px;
-    margin-top: 10%;
-    opacity: 0.8;
+  margin-left: 10px;
+  margin-top: 10%;
+  opacity: 0.8;
 }
 
 input {
-    width: 90%;
-    height: 30px;
-    border: 1px solid whitesmoke;
-    margin-left: 4%;
+  width: 90%;
+  height: 30px;
+  border: 1px solid whitesmoke;
+  margin-left: 4%;
 }
 
 .btn-1 {
-    width: 90%;
-    height: 40px;
-    background-color: rgb(78, 130, 226);
-    border: 1px solid rgb(78, 130, 226);
-    color: whitesmoke;
-    cursor: pointer;
-    margin-left: 4%;
+  width: 90%;
+  height: 40px;
+  background-color: rgb(78, 130, 226);
+  border: 1px solid rgb(78, 130, 226);
+  color: whitesmoke;
+  cursor: pointer;
+  margin-left: 4%;
+  font-family: Helvetica;
 }
 
 .dotted {
-    border: 1px dotted whitesmoke;
-    opacity: 0.9;
-    width: 90%;
-    height: 1%;
-    margin-top: 12%;
+  border: 1px dotted whitesmoke;
+  opacity: 0.9;
+  width: 90%;
+  height: 1%;
+  margin-top: 12%;
 }
 
 .btn-2 {
-    margin-top: 1%;
-    font-family: Helvetica;
-    margin-left: 4%;
+  margin-top: 1%;
+  font-family: Helvetica;
+  margin-left: 4%;
+  font-family: Helvetica;
 }
 
 .forgot {
-    padding: 4%;
-    margin-top: -5%;
+  padding: 4%;
+  margin-top: -5%;
 }
 
 .btn-3 {
-    margin-top: -12%;
-    padding: 4%;
-    font-size: 14px;
+  margin-top: -12%;
+  padding: 4%;
+  font-size: 14px;
 }
