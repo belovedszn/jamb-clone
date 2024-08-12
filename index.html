@@ -90,13 +90,22 @@
 
     <script>
       const images = ['img/bkg.jpg', 'img/bg.jpg'];
-      let currentImageIndex = 0;
+      let currentImageIndex = localStorage.getItem('currentImageIndex') || 0;
 
-      function changeBackgroundImage() {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+      function setBackgroundImage(index) {
+        document.body.style.backgroundImage = `url(${images[index]})`;
+        localStorage.setItem('currentImageIndex', index);
       }
 
+      function changeBackgroundImage() {
+        currentImageIndex = (parseInt(currentImageIndex) + 1) % images.length;
+        setBackgroundImage(currentImageIndex);
+      }
+
+      // Set the initial background image when the page loads
+      setBackgroundImage(currentImageIndex);
+
+      // Change the background image every 5 seconds
       setInterval(changeBackgroundImage, 5000);
     </script>
   </body>
