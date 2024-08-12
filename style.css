@@ -1,3 +1,4 @@
+/* Base Styles (applied to all devices) */
 .center {
   display: grid;
   place-items: center;
@@ -15,11 +16,11 @@ body {
 }
 
 .container {
-  width: 30%;
+  width: 90%; /* Default to a mobile-friendly width */
   height: auto;
   background-color: transparent;
   box-shadow: 0 0 10px rgb(88, 85, 85);
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 h2 {
@@ -70,4 +71,56 @@ input {
   margin-top: -12%;
   padding: 4%;
   font-size: 14px;
+}
+
+/* Desktop View (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 30%; /* More compact on larger screens */
+    margin-top: 1%;
+  }
+
+  input {
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+  }
+
+  .btn-1 {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .dotted {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .btn-2, .forgot, .btn-3 {
+    margin-left: 5%;
+  }
+}
+
+/* Tablet View (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 50%; /* Adjust the width for tablet view */
+    margin-top: 3%;
+  }
+
+  input, .btn-1, .dotted, .btn-2, .forgot, .btn-3 {
+    margin-left: 5%;
+  }
+}
+
+/* Mobile View (up to 767px) */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%; /* Mobile-friendly width */
+    margin-top: 5%;
+  }
+
+  input, .btn-1, .dotted, .btn-2, .forgot, .btn-3 {
+    margin-left: 4%;
+  }
 }
