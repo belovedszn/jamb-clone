@@ -1,45 +1,49 @@
-  .center {
+.center {
     display: grid;
     place-items: center;
-  }
+}
 
-  .nowrap {
+.nowrap {
     white-space: nowrap;
-  }
+}
 
-  body {
+body {
     background-image: url(img/bkg.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-family: Helvetica;
-  }
+}
 
-  .container {
+.container {
     width: 30%;
     height: auto;
     background-color: transparent;
     box-shadow: 0 0 10px rgb(88, 85, 85);
     margin-top: 1%;
-  }
+}
 
-  h2 {
+h2 {
     margin-left: 10px;
     margin-top: 10%;
     opacity: 0.8;
-  }
+}
 
-  input {
+input {
     width: 90%;
     height: 30px;
     border: 1px solid whitesmoke;
     margin-left: 4%;
-  }
+}
 
-  .btn-1 {
-    float: right;
-    margin-right: 4%;
-    font-family: Helvetica;
-  }
+.btn-1 {
+    width: 90%;
+    height: 40px;
+    background-color: rgb(78, 130, 226);
+    border: 1px solid rgb(78, 130, 226);
+    color: whitesmoke;
+    cursor: pointer;
+    margin-left: 4%;
+}
 
 .dotted {
     border: 1px dotted whitesmoke;
@@ -53,7 +57,6 @@
     margin-top: 1%;
     font-family: Helvetica;
     margin-left: 4%;
-    font-family: Helvetica;
 }
 
 .forgot {
